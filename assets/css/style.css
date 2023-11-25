@@ -31,6 +31,15 @@ header {
     padding: 10px;
     text-align: center;
 }
+nav {
+
+
+}
+
+#logo {
+
+}
+
 /* Main Content*/ 
 main {
     background-color: brown;
@@ -43,4 +52,5 @@ footer {
     background-color: blueviolet;
     padding: 10px;
     text-align: center;
+    margin-top: auto;
 }
