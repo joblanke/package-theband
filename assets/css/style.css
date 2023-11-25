@@ -13,7 +13,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -28,15 +28,10 @@ h1, h2 {
 /* Header*/
 header {
     background-color: black;
-    padding: 10px;
-    text-align: center;
-}
-nav {
-
-
-}
-
-#logo {
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
 
 }
 
