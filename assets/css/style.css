@@ -17,53 +17,66 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
+    /* Ensure stacking context */
 }
-h1, h2 {
+
+h1,
+h2 {
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 3px;
-
-}
-
-h1 {
     color: #fafafa;
 }
 
+header h1 {
+    color: #fafafa;
+    text-align: center;
+}
 
-/* Header*/
+/* Header */
 header {
     background-color: black;
-    padding: 0 1rem;
+    display: flex;
     position: fixed;
-    z-index: 99;
+    z-index: 1;
     width: 100%;
-    box-shadow:   0px 1.4px 0.7px rgba(0, 0, 0, 0.013),
-    0px 3.1px 1.5px rgba(0, 0, 0, 0.019),
-    0px 5.2px 2.6px rgba(0, 0, 0, 0.023),
-    0px 7.8px 3.9px rgba(0, 0, 0, 0.027),
-    0px 11.3px 5.6px rgba(0, 0, 0, 0.03),
-    0px 15.9px 8px rgba(0, 0, 0, 0.033),
-    0px 22.6px 11.3px rgba(0, 0, 0, 0.037),
-    0px 32.9px 16.4px rgba(0, 0, 0, 0.041),
-    0px 50.6px 25.3px rgba(0, 0, 0, 0.047),
-    0px 90px 45px rgba(0, 0, 0, 0.06)
-  ;
+    box-shadow: 0px 1.4px 0.7px rgba(0, 0, 0, 0.013),
 
+        justify-content: space-between;
+    align-items: baseline;
 }
+
+nav {
+    text-align: right;
+}
+
+nav ul {
+    letter-spacing: 1em;
+}
+
 header a {
     text-decoration: none;
+    color: #fafafa;
 }
-/* Main Content*/ 
+
+/* Main Content */
 main {
     background-color: brown;
     flex: 1 0 auto;
-    padding: 20px;
+    padding-top: 80px;
+
 }
 
-/* Footer*/
+main h2 {
+    margin-top: 20px;
+    /* Adjust as needed */
+}
+
+/* Footer */
 footer {
-    background-color: blueviolet;
+    background-color: magenta;
+    /* Change as needed */
     padding: 10px;
     text-align: center;
-    margin-top: auto;
 }
